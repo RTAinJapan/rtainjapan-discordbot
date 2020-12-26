@@ -15,7 +15,7 @@ class SendObsninjaUrl extends commando.Command {
           key: 'id',
           prompt: '※送信先IDが代入されていません。',
           type: 'string',
-          validate: (id) => id.match(/^[0-9a-zA-Z]+$/),
+          validate: (id) => id.match(/^[0-9a-zA-Z]{1,24}$/),
         },
       ],
     });
