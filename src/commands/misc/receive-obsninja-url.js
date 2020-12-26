@@ -7,7 +7,7 @@ class ReceiveObsninjaUrl extends commando.Command {
       name: 'receive-obsninja-url',
       aliases: ['receiveurl', 'receive'],
       memberName: 'receive-obsninja-url',
-      description: 'Receive streaming url of OBS.Ninja to RTA in Japan Bot',
+      description: 'Receive streaming url of OBS.Ninja from RTA in Japan Bot',
       group: 'misc',
       guildOnly: true,
       args: [

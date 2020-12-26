@@ -7,7 +7,7 @@ class SendObsninjaUrl extends commando.Command {
       name: 'send-obsninja-url',
       aliases: ['sendurl', 'send'],
       memberName: 'send-obsninja-url',
-      description: 'Send streaming url of OBS.Ninja to RTA in Japan Bot',
+      description: 'Send streaming url of OBS.Ninja from RTA in Japan Bot',
       group: 'misc',
       guildOnly: true,
       args: [
