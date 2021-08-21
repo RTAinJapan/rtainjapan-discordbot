@@ -15,17 +15,15 @@
   "license": "ISC",
   "dependencies": {
     "config": "^3.3.6",
+    "cross-env": "^7.0.3",
     "discord.js": "^12.5.1",
-    "discord.js-commando": "git+https://github.com/discordjs/commando.git",
-    "dotenv": "^8.2.0",
-    "module-alias": "^2.2.2"
+    "discord.js-commando": "git+https://github.com/discordjs/commando.git"
   },
   "devDependencies": {
     "@types/config": "0.0.39",
     "@types/node": "^12.20.19",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
-    "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",

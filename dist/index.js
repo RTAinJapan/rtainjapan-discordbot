@@ -11,12 +11,12 @@ const client = new discord_js_commando_1.CommandoClient({
     owner: config.ownerId,
     commandPrefix: config.prefix,
 });
-client.on("error", console.error).on("ready", () => {
-    console.log("Ready!");
+client.on('error', console.error).on('ready', () => {
+    console.log('Ready!');
 });
 client.registry
     .registerDefaults()
-    .registerGroups([["misc", "misc commands"]])
-    .registerCommandsIn(path_1.join(__dirname, "commands"));
+    .registerGroups([['misc']])
+    .registerCommandsIn(path_1.join(__dirname, 'commands'));
 client.login(config.token);
 //# sourceMappingURL=index.js.map
