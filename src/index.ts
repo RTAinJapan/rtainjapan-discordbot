@@ -1,6 +1,6 @@
-import { CommandoClient } from "discord.js-commando";
-import { join } from "path";
-import configModule from "config";
+import { CommandoClient } from 'discord.js-commando';
+import { join } from 'path';
+import configModule from 'config';
 const config: Config = configModule.util.toObject(configModule);
 
 const client = new CommandoClient({
@@ -8,13 +8,13 @@ const client = new CommandoClient({
   commandPrefix: config.prefix,
 });
 
-client.on("error", console.error).on("ready", () => {
-  console.log("Ready!");
+client.on('error', console.error).on('ready', () => {
+  console.log('Ready!');
 });
 
 client.registry
   .registerDefaults()
-  .registerGroups([["misc", "misc commands"]])
-  .registerCommandsIn(join(__dirname, "commands"));
+  .registerGroups([['misc']])
+  .registerCommandsIn(join(__dirname, 'commands'));
 
 client.login(config.token);
